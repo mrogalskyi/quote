@@ -1,0 +1,37 @@
+{
+  "name": "quote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrogalskyi/quote.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrogalskyi/quote/issues"
+  },
+  "homepage": "https://github.com/mrogalskyi/quote#readme",
+  "devDependencies": {
+    "@angular/platform-browser": "^2.4.3",
+    "@angular/platform-browser-dynamic": "^2.4.3",
+    "awesome-typescript-loader": "^3.0.0-beta.18",
+    "clean-webpack-plugin": "^0.1.15",
+    "html-webpack-plugin": "^2.26.0",
+    "typescript": "^2.1.5",
+    "webpack": "^2.2.0-rc.4",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "@angular/common": "^2.4.3",
+    "@angular/compiler": "^2.4.3",
+    "@angular/core": "^2.4.3",
+    "core-js": "^2.4.1",
+    "rxjs": "^5.0.3",
+    "zone.js": "^0.7.5"
+  }
+}
