@@ -21,7 +21,13 @@ module.exports = {
             use: [{
                 loader: 'awesome-typescript-loader'
             }],
-        }]
+        },
+        {
+            test: /\.css$/,
+            use: ['css-loader']
+        },
+        { test: /\.(png|woff|woff2|eot|ttf|svg)$/, use: 'url-loader?limit=100000' }
+        ]
     },
     plugins: [
         new webpack.optimize.CommonsChunkPlugin({
@@ -30,6 +36,11 @@ module.exports = {
 
         new HtmlWebpackPlugin({
             template: 'src/index.html'
+        }),
+        new webpack.ProvidePlugin({
+            jQuery: 'jquery',
+            $: 'jquery',
+            jquery: 'jquery'
         }),
         new CleanWebpackPlugin(['dist', 'build'], {
             root: __dirname,

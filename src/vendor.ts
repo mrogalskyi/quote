@@ -1,3 +1,5 @@
+import 'jquery';
+import 'bootstrap/dist/js/bootstrap';
 // Angular
 import '@angular/platform-browser';
 import '@angular/platform-browser-dynamic';
