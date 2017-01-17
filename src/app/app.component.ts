@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 @Component({
-  selector: 'my-app',
-  template: `<div class="btn-group" role="group" aria-label="...">
-  <button type="button" class="btn btn-default">Left</button>
-  <button type="button" class="btn btn-default">Middle</button>
-  <button type="button" class="btn btn-default">Right</button>
-</div>`,
+  selector: 'qu-app',
+  template: `
+  <div>
+    <qu-top-menu></qu-top-menu>
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  `,
 })
 export class AppComponent { }
